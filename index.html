@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dern Support</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- Proloader qo'shimchasi website mizni yana ham churoyli ko'rinishga olib kelish uchun qo'shildi -->
+  <!-- PRELOADER --> 
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- HEADER section boshlandi-->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+       <a href="./index.html" class="header-logo">Dern Support <i class="fa-brands fa-usb"></i></a>
+      </div>
+      <nav>
+        <ul id="mainMenu">
+          <li><a href="#home" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="#services" class="nav-link">Xizmatlar</a></li>
+          <li><a href="#contact" class="nav-link">Aloqa</a></li>
+          <li id="authLinks">
+            <a href="#wrapper" class="btn btn-outline">Kirish</a>
+            <!-- onclick="showLogin()" -->
+            <a href="#wrapper" class="btn btn-primary">Ro'yxatdan o'tish</a>
+          </li>
+          <li id="userInfo" class="hidden">
+            <div class="dropdown">
+              <button class="dropbtn">Salom, <span id="userName">Foydalanuvchi</span></button>
+              <div class="dropdown-content">
+                <a href="#" id="dashboardLink" data-page="dashboard">Panel</a>
+                <a href="#" id="logoutBtn">Chiqish</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER section tugatildi -->
+
+  <!-- MAIN CONTENT boshlandi -->
+  <main id="main-content">
+    <!-- HOME PAGE section qismimiz-->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Dern Support bilan kompyuter tizimlaringizdagi muammolarga biz bilan mukammal va oson yechim toping</h1>
+            <p>Kompyuter va noutbukingizda kelib chiqqan barcha muammolarga professional shaklda yechim topamiz va sizni kompyuterga aloqador muammolardan halos qilamiz. Dern Support bilan muammolaringizga yakun yasang.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features container">
+        <h2 class="section-title">Bizning afzalliklarimiz</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Tez xizmat</h3>
+            <p>Ko'pchilik muammolar 24 soat ichida hal etiladi</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>Ma'lumotlar xavfsizligi</h3>
+            <p>Sizning ma'lumotlaringiz to'liq himoyalangan holda saqlanadi</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
+            <h3>Qulay narxlar</h3>
+            <p>Barcha xizmatlar hamyonbop narxlarda taqdim etiladi</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Malakali mutaxassislar</h3>
+            <p>Tajribali va bilimli ustalar tomonidan xizmat ko'rsatiladi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-preview">
+        <div class="container">
+          <h2 class="section-title">Bizning xizmatlar</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <img src="./images/pexels-photo-3846554.webp" alt="Kompyuter ta'mirlash">
+              <h3>Kompyuter ta'mirlash</h3>
+              <p>Har qanday rusumli kompyuterlarni ta'mirlash va yangilash xizmatlari</p>
+            </div>
+            <div class="service-card">
+              <img src="./images/pexels-photo-4312862.webp" alt="Noutbuk ta'mirlash">
+              <h3>Noutbuk ta'mirlash</h3>
+              <p>Barcha turdagi noutbuklarni ta'mirlash va zamonaviylashtirish</p>
+            </div>
+            <div class="service-card">
+              <img src="./images/close-up-computer-repair-service-maintenance-cleanup-dust-dirty-checkup-electronic-devices-close-up-computer-117236155.webp" alt="Dasturiy ta'minot">
+              <h3>Dasturiy ta'minot</h3>
+              <p>Operatsion tizimlarni o'rnatish va dasturiy xizmatlar</p>
+            </div>
+          </div>
+          <!-- <div class="text-center">
+            <a href="#" class="btn btn-secondary" data-page="services">Barcha xizmatlarni ko'rish</a>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="container">
+          <h2 class="section-title">Mijozlar fikrlari</h2>
+          <div class="testimonials-slider">
+            <div class="testimonial-card active">
+              <div class="testimonial-text">
+                <p>"Kompyuterim juda sekin ishlab qolgan edi. Dern Support mutaxassislari tezda muammoni aniqlab, bartaraf etishdi. Endi kompyuterim yangiday ishlayapti!"</p>
+              </div>
+              <div class="testimonial-author">
+                <h4>Cristiano Ronaldo</h4>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-text">
+                <p>"Noutbukimni suv tushib ketgandan keyin ta'mirlashdi. Boshqa joylar imkoni yo'q deyishgandi. Juda ham professional xizmat!"</p>
+              </div>
+              <div class="testimonial-author">
+                <h4>Lutfullo To'rayev</h4>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-text">
+                <p>"Tez va sifatli xizmat. Barcha kerakli dasturlarni o'rnatib berishdi. Tavsiya qilaman!"</p>
+              </div>
+              <div class="testimonial-author">
+                <h4>Carlo Anchelotti</h4>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button id="prevTestimonial" class="testimonial-btn">&lt;</button>
+            <div class="testimonial-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button id="nextTestimonial" class="testimonial-btn">&gt;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE section boshlandi-->
+    <section id="about" class="page">
+      <div class="container">
+        <h1 class="section-title">Biz haqimizda</h1>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./images/pexels-photo-2582937.jpeg" alt="Dern Support jamosi">
+          </div>
+          <div class="about-text">
+            <h2>Dern Support kompaniyasi</h2>
+            <p>Dern Support kompaniyasi 2020-yildan buyon Toshkent shahrida faoliyat yuritib kelmoqda. Kompaniyamiz kompyuter va noutbuklar bilan bog'liq barcha muammolarni hal qilishga ixtisoslashgan.</p>
+            <p>Bizning jamoamiz malakali mutaxassislardan iborat bo'lib, ular har qanday murakkablikdagi muammolarni hal qila oladi. Biz faqat sifatli va ishonchli xizmatlarni taqdim etamiz.</p>
+            <p>Bizning maqsadimiz mijozlarimizga eng yuqori sifatli xizmatni qulay narxlarda taqdim etishdir. Biz har bir mijoz bilan individual yondashuvda ishlaymiz va sizning texnikangizni tezda ishga tushirishga harakat qilamiz.</p>
+            <h3>Bizning qadriyatlarimiz:</h3>
+            <ul>
+              <li>Sifat va ishonchlilik</li>
+              <li>Tezkor xizmat</li>
+              <li>Mijozlar manfaati</li>
+              <li>Doimiy rivojlanish</li>
+              <li>Ochiqlik va halollik</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="team">
+          <h2 class="section-title">Bizning jamoa</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jamshid Alimov">
+              <h3>Muzaffar Eshnazarov</h3>
+              <p>Kompaniya direktori</p>
+            </div>
+            <div class="team-member">
+              <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dilshod Karimov">
+              <h3>Diego Mahmudov</h3>
+              <p>Bosh texnik mutaxassis</p>
+            </div>
+            <div class="team-member">
+              <img src="https://images.pexels.com/photos/5082976/pexels-photo-5082976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Zuxra Soliyeva">
+              <h3>Luiza Jabbarova</h3>
+              <p>Mijozlar bilan ishlash bo'limi</p>
+            </div>
+            <div class="team-member">
+              <img src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bobur Saidov">
+              <h3>Lionel Messi</h3>
+              <p>Texnik mutaxassis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT PAGE tugatildi -->
+
+    <!-- SERVICES PAGE boshlandi-->
+    <section id="services" class="page">
+      <div class="container">
+        <h1 class="page-title">Xizmatlar</h1>
+        <div class="services-content">
+          <p class="services-intro">Dern Support kompaniyasi kompyuter texnikasi bilan bog'liq keng ko'lamdagi xizmatlarni taqdim etadi. Bizga murojaat qilish orqali siz quyidagi xizmatlardan foydalanishingiz mumkin:</p>
+          
+          <div class="services-list">
+            <div class="service-item">
+              <img src="./images/close-up-computer-repair-service-maintenance-cleanup-dust-dirty-checkup-electronic-devices-close-up-computer-117236155.webp" alt="Kompyuter ta'mirlash">
+              <div class="service-info">
+                <h3>Kompyuter ta'mirlash</h3>
+                <p>Stol kompyuterlarini ta'mirlash, komponentlarini almashtirish va yangilash xizmatlari.</p>
+                <ul>
+                  <li>Texnik diagnostika</li>
+                  <li>Qismlarni almashtirish</li>
+                  <li>Tizimni optimallashtirish</li>
+                  <li>Changlarda tozalash</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <img src="./images/pexels-photo-2225617.webp" alt="Noutbuk ta'mirlash">
+              <div class="service-info">
+                <h3>Noutbuk ta'mirlash</h3>
+                <p>Barcha turdagi noutbuklarni ta'mirlash va ularning ishlashini optimalllashtirish.</p>
+                <ul>
+                  <li>Ekran almashtirish</li>
+                  <li>Batareya almashtirish</li>
+                  <li>Klaviatura ta'mirlash</li>
+                  <li>Qizib ketish muammolarini hal qilish</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <img src="./images/pexels-photo-2399840.jpeg" alt="Dasturiy ta'minot">
+              <div class="service-info">
+                <h3>Dasturiy ta'minot xizmatlari</h3>
+                <p>Operatsion tizimlarni o'rnatish va yangilash, dasturiy ta'minotni sozlash.</p>
+                <ul>
+                  <li>Windows, macOS o'rnatish</li>
+                  <li>Antivirus dasturlarini o'rnatish</li>
+                  <li>Ma'lumotlarni tiklash</li>
+                  <li>Dasturiy ta'minot yangilash</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <img src="./images/pexels-photo-2582937.jpeg" alt="Tarmoq xizmatlari">
+              <div class="service-info">
+                <h3>Tarmoq xizmatlari</h3>
+                <p>Wi-Fi tarmoqlarini o'rnatish, sozlash va xavfsizlikni ta'minlash.</p>
+                <ul>
+                  <li>Wi-Fi tarmoqlarni o'rnatish</li>
+                  <li>Tarmoq xavfsizligini ta'minlash</li>
+                  <li>Tarmoq qurilmalarini sozlash</li>
+                  <li>Internet tezligini optimallashtirish</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES PAGE tugatildi -->
+
+    <!-- CONTACT PAGE boshlandi-->
+    <section id="contact" class="page">
+      <div class="container">
+        <h1 class="page-title">Biz bilan bog'lanish</h1>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Bizning manzil:</h3>
+            <p><strong>Manzil:</strong> Toshkent shahri, Chilonzor tumani, Bunyodkor ko'chasi, 12-uy</p>
+            <p><strong>Telefon:</strong> +998 71 123-45-67</p>
+            <p><strong>E-pochta:</strong> info@dernsupport.uz</p>
+            <p><strong>Ish vaqti:</strong> Dushanba-Shanba, 9:00 - 18:00</p>
+            
+            <h3 class="mt-20">Ijtimoiy tarmoqlar:</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">Telegram</a>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <h3>Xabar qoldirish</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Ism-familiya</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-pochta</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon raqam</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Xabar</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Yuborish</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="map-container">
+          <h3 class="page-title">Bizning joylashuv</h3>
+          <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21485.329164540577!2d69.22889370454378!3d41.307265457180236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1748611739252!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TUGADI -->
+    <div class="wrapper" id="wrapper">
+
+    <!-- <div id="modalOverlay"></div> -->
+    <!-- LOGIN PAGE boshlandi -->
+    <section id="login" class="page">
+        <div class="container">
+          <div id="login" class="auth-container">
+            <h1 class="auth-title">Tizimga kirish</h1>
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="loginUsername">Foydalanuvchi nomi</label>
+                <input type="text" id="loginUsername" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Parol</label>
+                <input type="password" id="loginPassword" name="password" required>
+              </div>
+              <div class="auth-buttons">
+                <button type="submit" class="btn btn-primary">Kirish</button>
+              </div>
+              <p class="auth-switch">Hisobingiz yo'qmi? <a href="#" data-page="register">Ro'yxatdan o'ting</a></p>
+            </form>
+          </div>
+        </div>
+    </section>
+    <!-- LOGIN PAGE tugatildi -->
+
+    <!-- REGISTER PAGE -->
+    <section id="register" class="page">
+        <div class="container">
+          <div class="auth-container">
+            <h1 class="auth-title">Ro'yxatdan o'tish</h1>
+            <form id="registerForm">
+              <div class="form-group">
+                <label for="registerFullName">To'liq ism-familiya</label>
+                <input type="text" id="registerFullName" name="fullName" required>
+              </div>
+              <div class="form-group">
+                <label for="registerUsername">Foydalanuvchi nomi</label>
+                <input type="text" id="registerUsername" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="registerEmail">E-pochta</label>
+                <input type="email" id="registerEmail" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="registerPhone">Telefon raqam</label>
+                <input type="tel" id="registerPhone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="registerPassword">Parol</label>
+                <input type="password" id="registerPassword" name="password" required>
+              </div>
+              <div class="form-group">
+                <label for="registerPasswordConfirm">Parolni tasdiqlang</label>
+                <input type="password" id="registerPasswordConfirm" name="passwordConfirm" required>
+              </div>
+              <div class="auth-buttons">
+                <button type="submit" class="btn btn-primary">Ro'yxatdan o'tish</button>
+              </div>
+              <p class="auth-switch">Hisobingiz bormi? <a href="#" data-page="login">Tizimga kiring</a></p>
+            </form>
+          </div>
+        </div>
+    </section>
+  </div>
+    <!-- USER DASHBOARD bu jarayon user ro'yhottan o'tkanida amalga oshadi -->
+    <section id="dashboard" class="page dashboard"></section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Dern Support</h3>
+          <p>Professional kompyuter tizimlarini ta'mirlash va xizmat ko'rsatish kompaniyasi. Biz 2025-yildan beri mijozlarimizga sifatli xizmat ko'rsatib kelmoqdamiz.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Foydali havolalar</h3>
+          <ul>
+            <li><a href="#home"">Bosh sahifa</a></li>
+            <li><a href="#about">Biz haqimizda</a></li>
+            <li><a href="#services">Xizmatlar</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Biz bilan bog'lanish</h3>
+          <p><strong>Manzil:</strong> Toshkent shahri, Chilonzor tumani, Bunyodkor ko'chasi, 12-uy</p>
+          <p><strong>Telefon:</strong> +998 71 123-45-67</p>
+          <p><strong>E-pochta:</strong> info@dernsupport.uz</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dern Support. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/technician.js"></script>
+  <script src="js/user.js"></script>
+  <script src="/test.js"></script>
+</body>
+</html>
